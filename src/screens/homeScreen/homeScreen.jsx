@@ -111,7 +111,7 @@ function HomeScreen({navigation}) {
   return (
     <View style={styles.screen}>
       <Text style={styles.title}>Job List</Text>
-      <ScrollView>
+      <View>
         <View
           style={styles.searchRow}
         >
@@ -135,8 +135,9 @@ function HomeScreen({navigation}) {
         </View>
         {
           jobList.length > 0 ?
-          <View>
+          <View style={{flex:1, marginBottom: 10}}>
             <FlatList
+            style={{flex:1, marginBottom: 10}}
               extraData={jobList}
               data={jobList}
               refreshing={refresh}
@@ -201,7 +202,7 @@ function HomeScreen({navigation}) {
           :
           <View/> 
         }
-      </ScrollView>
+      </View>
       <ModalSearch
         visible={modalFilter}
         setVisible={() => applyFilter()}

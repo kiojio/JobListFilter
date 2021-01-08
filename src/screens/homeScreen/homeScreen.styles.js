@@ -9,12 +9,13 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    margin: 20,
+    marginTop: 40,
     ...fonts.style.title,
   },
   searchRow:{
     flex:1,
     flexDirection: "row",
+    maxHeight:50
   },
   searchInput:{
     flex:1,
