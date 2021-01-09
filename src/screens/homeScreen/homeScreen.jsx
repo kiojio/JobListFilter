@@ -135,9 +135,8 @@ function HomeScreen({navigation}) {
         </View>
         {
           jobList.length > 0 ?
-          <View style={{flex:1, marginBottom: 10}}>
+          <View style={{flex:1, marginBottom:30}}>
             <FlatList
-            style={{flex:1, marginBottom: 10}}
               extraData={jobList}
               data={jobList}
               refreshing={refresh}

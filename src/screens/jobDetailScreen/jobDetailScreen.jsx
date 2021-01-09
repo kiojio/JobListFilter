@@ -21,7 +21,7 @@ function JobDetailScreen({route, navigation}) {
   const linkJob = `https://jobs.github.com/positions/`
 
   useEffect(() => {
-    const fetchData = async () => await axios.get(`${linkJob}${jobId}.json`)
+    const fetchData = () => axios.get(`${linkJob}${jobId}.json`)
       .then(res => {
         let data = {
           error: false,

@@ -27,7 +27,7 @@ export default StyleSheet.create({
   Card:{
     flex:1,
     flexDirection: 'row',
-    height: 80,
+    height: 'auto',
     marginTop: 10,
     marginBottom: 10,
     padding: 5,
